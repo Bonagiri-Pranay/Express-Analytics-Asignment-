@@ -1,14 +1,25 @@
 ## Environment Variables
 
-Create a `.env` file in the project root and add:
+Create a `.env` file in the project root:
 
 ```env
 GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
-Obtain a Gemini API key from Google AI Studio.
+The `.env` file is excluded from the repository for security reasons.
 
-The `.env` file is intentionally excluded from the repository for security reasons.
+## Running the Project
+
+```bash
+pip install -r requirements.txt
+python ingest.py
+uvicorn app.main:app --reload
+```
+
+Open:
+
+http://127.0.0.1:8000/docs
+
 
 
 
